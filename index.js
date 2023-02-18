@@ -12,6 +12,10 @@ import Routes from './routes/route.js';
 dotenv.config();
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send('Welcome to my app!');
+})
+
 
 const PORT = process.env.PORT || 4000;
 
